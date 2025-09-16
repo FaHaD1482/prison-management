@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prison Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h1>Prison Management</h1>
+        </div>
+        <div class="right-side">
+            <h2>Log In</h2>
+            <form id="loginForm" action="../src/php/login.php" method="post">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Enter username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Select Role</label>
+                    <select id="role" name="role" required>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+            <div id="errorMessage" class="error"></div>
+        </div>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

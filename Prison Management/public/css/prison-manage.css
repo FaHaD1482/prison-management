@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    padding: 0%;
+    width: 85%;
+    height: 100vh;
+    margin: 2% auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #4a4a4a;
+    color: white;
+    width: 19%;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.sidebar button {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.sidebar button:hover, .sidebar button.active {
+    background-color: #5c5c5c;
+}
+
+.sidebar .logout {
+    width: 80%;
+    background-color: #a94442;
+    border-radius: 20px;
+    margin-top: auto;
+    text-align: center;
+}
+
+.sidebar .logout:hover {
+    background-color: #8a2b28;
+}
+
+.content {
+    flex: 1;
+    background-color: #f2f2f2;
+    margin: 15px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 81%;
+}
+
+.input-section {
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    padding: 20px 10px 20px 10px;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    padding: 0;
+    gap: 0px;
+    width: 100%;
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px 0px 0px 10px;
+    width: 80%;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    width: 20%;
+}
+
+.search-bar button:hover {
+    background-color: #5c5c5c;
+    transition: 300ms;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: repeat(2, 47%);
+    gap: 20px 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.form-group input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: auto;
+}
+
+.add-button, .update-button, .delete-button, .associate-button {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.add-button:hover, .update-button:hover, .delete-button:hover, .associate-button:hover {
+    transition: 500ms;
+}
+
+.add-button {
+    background-color: #2d4d3a;
+}
+
+.add-button:hover {
+    background-color: #45a049;
+}
+
+.update-button {
+    background-color: #396136;
+}
+
+.update-button:hover {
+    background-color: #4cd442;
+}
+
+.delete-button {
+    background-color: #65582a;
+}
+
+.delete-button:hover {
+    background-color: #ecc22b;
+}
+
+.associate-button {
+    background-color: #504370;
+}
+
+.associate-button:hover {
+    background-color: #6938e7;
+}
+
+.table-section {
+    flex: 1;
+    overflow: auto;
+    border-radius: 10px;
+    background-color: #b1b1b1;
+    padding: 7px;
+}
+
+.prison-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    background-color: #333333;
+    border-radius: 7px;
+    overflow: hidden;
+}
+
+.prison-table th,
+.prison-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #4f4f4f;
+    color: #e0e0e0;
+}
+
+.prison-table th {
+    background-color: #343434;
+    color: #ffffff;
+}
+
+.prison-table tr:hover {
+    background-color: #424242;
+    cursor: pointer;
+}

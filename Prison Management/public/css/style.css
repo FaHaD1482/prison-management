@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    border-radius: 2%;
+    width: 66%;
+    max-width: 1200px;
+    height: 90%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.left-side {
+    flex: 1;
+    background: url("../images/loginImg.png") no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0px;
+    color: black;
+    font-family: 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+.left-side h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    margin-bottom: 20%;
+}
+
+.right-side {
+    flex: 0.5;
+    background-color: #eae0c4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+    margin: 40px 30px;
+    border-radius: 4%;
+}
+
+.right-side h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 250px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #232933;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
